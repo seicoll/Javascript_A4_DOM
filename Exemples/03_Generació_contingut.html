@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Generació de contingut HTML</title>
+	<link rel="stylesheet" href="exemples.css" />
+
+	<script>
+		function omplirAnys(inici, final, seleccionat) {
+			document.write("<select>");
+
+			for (var any = inici; any <= final; any++) {
+				document.write("<option value=" + any);
+
+				if (any == seleccionat)
+					document.write(" selected");
+
+				document.write(">" + any);
+			}
+
+			document.write("</select>");
+		}
+	</script>
+</head>
+
+<body>
+	<h1>Generació de contingut HTML</h1>
+
+	<p>
+		Any de naixement
+		<br>
+		<script>
+			omplirAnys(1950, 2013, 1995);
+		</script>
+	</p>
+</body>
+
+</html>

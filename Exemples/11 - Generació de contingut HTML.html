@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>11 - Generació de contingut HTML</title>
+		<link rel="stylesheet" href="exemples.css"></style>
+		<script>
+			function generaCodi()
+			{
+				// Si generem codi dins d'una funció, ja que no es pot
+				// determinar on ha de situar-se substitueix el document
+				// sencer
+				
+				document.write("Text generat des del codi JavaScript");
+			}
+
+			function generaCodi2()
+			{
+				// per evitar-ho hem de generar el codi dins d'un altre element
+				// utilitzant la propietat innerHTML
+
+				document.getElementById("espaiBuit").innerHTML = "Text generat des del codi JavaScript";
+			}
+		</script>
+	</head>
+	<body>
+		<h1>11 - Generació de contingut HTML</h1>
+		
+		<p>Abans del codi generat</p>
+		
+		<script>
+			// El codi generat apareixerà en aquest punt concret
+			
+			var sistemaOperatiu = navigator.platform;
+			document.write("El teu navegador s'executa sobre " + sistemaOperatiu);
+		</script>
+
+		<p>Després del codi generat</p>
+
+		Prem <a href="javascript:generaCodi();">aquí</a> per generar més contignut<br>
+
+		Prem <a href="javascript:generaCodi2();">aquí</a> per generar contignut dins d'un altre element
+		
+		<p id="espaiBuit"></p>
+	</body>
+</html>

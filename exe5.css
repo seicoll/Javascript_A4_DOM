@@ -1,0 +1,41 @@
+body {
+	font-family: Arial;
+	font-size: 14pt;
+}
+
+h1 {
+	font-size: 22pt;
+	font-weight: bold;
+}
+
+h1,h2,h3{
+    background-color: rgb(230,230,230);
+    border-bottom: 1px solid black;
+    padding: 2px 8px;
+}
+
+input {
+	border: 1px solid grey;
+	padding: 2px;
+	/*background: rgb(240,240,255);*/
+	font-size: 14pt;
+	width: 200px;
+}
+
+input[type=button] {
+	width: 310px;
+}
+
+label {
+	font-size: 14pt;
+	width: 100px;
+	display:inline-block;
+	margin-bottom:10px;
+}
+
+table{
+    border-color:lightgray;
+}
+
+
+

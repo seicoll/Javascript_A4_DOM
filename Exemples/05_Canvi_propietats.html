@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Canvi de propietats d'elements</title>
+    <link rel="stylesheet" href="exemples.css"/>
+    
+    
+    <script>
+        function encendreBoto(mode) {
+            var boto = document.getElementById("botoEnviar");
+
+            switch (mode) {
+                case 1:
+                    boto.src = "imatges/botoBlau.png";  //boto.setAttribute("src","imatges/botoBlau.png")
+                    boto.style.cursor = "pointer";
+                    break;
+
+                case 2:
+                    boto.src = "imatges/botoGris.png";  ////boto.setAttribute("src","imatges/botoGris.png")
+                    boto.style.cursor = "default";
+                    //boto.setAttribute("style","cursor:default");
+                    break;
+            }
+        }
+
+        document.getElementById("nomUsuari").focus();
+    </script>
+</head>
+
+<body>
+    <h1>Canvi de propietats d'elements</h1>
+
+    <p>
+        Nom d'usuari
+        <br>
+        <input id="nomUsuari">
+    </p>
+
+    <img src="imatges/botoGris.png" id="botoEnviar" onMouseOver="encendreBoto(1);" onMouseOut="encendreBoto(2);">
+
+    
+</body>
+
+</html>

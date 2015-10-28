@@ -1,0 +1,33 @@
+body {
+	font-family: Arial;
+	font-size: 14pt;
+}
+
+h1 {
+	font-size: 22pt;
+	font-weight: bold;
+	background-color: rgb(230,230,230);
+	padding: 2px 8px;
+	border-bottom: 1px solid black;
+}
+
+input, select {
+	border: 1px solid grey;
+	padding: 2px;
+	background: rgb(240,240,255);
+	font-size: 14pt;
+	width: 300px;
+}
+
+input[readonly] {
+	border: 1px solid red;
+	padding: 2px;
+	background: rgb(255,240,240);
+	font-size: 14pt;
+	width: 300px;
+}
+
+button {
+	font-size: 14pt;
+	width: 150px;
+}
